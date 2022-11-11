@@ -464,3 +464,71 @@ blockquote {
   text-align: center;
   justify-self: end;
 }
+/***********************/
+/*PROFILE page*/
+/**********************/
+.s-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 2.4rem 3.2rem;
+  margin-bottom: 9.6rem;
+  height: 55vh;
+}
+.first-col {
+  background-color: #064635;
+  border-radius: 8px 0 0 8px;
+}
+.profile-img-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+.user-img {
+  border-radius: 50%;
+  height: 12.8rem;
+}
+.user-name {
+  text-align: center;
+  color: #f0bb62;
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.profile-actions {
+  text-align: center;
+  color: #f0bb62;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3.2rem;
+}
+.profile-list {
+  list-style: none;
+  font-size: 1.8rem;
+}
+.real {
+  text-align: left;
+}
+.profile-links,
+.profile-links:link,
+.profile-links:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  color: #f0bb62;
+}
+
+.second-col {
+  border: 1px solid #064635;
+  border-radius: 0 8px 8px 0;
+  background-color: #faf7d4;
+  text-align: center;
+}
+.profile-content {
+  margin-top: 50%;
+  color: #064635;
+}
