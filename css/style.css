@@ -31,6 +31,122 @@
 }
 /*ANIMATED NUMBERS section*/
 /*FLIP CARDS section*/
+.flip-cards {
+  background-color: #064635;
+  padding: 6.4rem 0rem 9.6rem 0rem;
+}
+.boxesContainer {
+  display: flex;
+  gap: 3.2rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+.boxesContainer h3 {
+  text-align: center;
+  padding: 6.4rem;
+}
+.cardBox {
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 80rem;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .fcard {
+  transform: rotateY(180deg);
+}
+
+.fcard {
+  background: #fefdf6;
+  border: 1px solid #064635;
+  border-radius: 10px !important;
+  cursor: default;
+  height: 30rem;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.fcard p {
+  margin-bottom: 1.8em;
+}
+
+.fcard .front,
+.fcard .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: #064635;
+  display: block;
+  font-size: 1.4rem;
+  height: 100%;
+  padding: 1.4rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px !important;
+}
+
+.fcard .back {
+  transform: rotateY(180deg);
+}
+
+.cardBox .fcard .back {
+  background: #f0bb62;
+}
+
+.cardBox:nth-child(2) .fcard {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .fcard {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .fcard {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .fcard {
+    height: 260px;
+  }
+}
 /*FEATURES section*/
 
 /*******************************/
@@ -532,3 +648,18 @@ blockquote {
   margin-top: 50%;
   color: #064635;
 }
+/*************************/
+/*NEW STORY page*/
+/************************/
+
+/*Fixed header*/
+/* .newstory-header {
+  display: flex;
+  color: #064635;
+  justify-content: space-between;
+  margin: 3.2rem 1.8rem;
+}
+.newstory-header a {
+  display: inline-block;
+} */
+/**************************/
